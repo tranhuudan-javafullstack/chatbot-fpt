@@ -1,0 +1,268 @@
+@import "../../styles/abstracts/variables";
+.login-background {
+  min-height: 100vh;
+  position: relative;
+  background: #27262C;
+  overflow: hidden;
+
+  .login-container {
+    width: 400px !important;
+
+    .title-login {
+      text-align: left;
+      margin-bottom: 60px;
+
+      .title-form {
+        font-family: 'JK Abode', sans-serif;
+        color: white;
+        font-size: 96px;
+        line-height: 96px;
+        font-weight: 400;
+      }
+
+      img {
+        width: 190px;
+        object-fit: cover;
+      }
+    }
+
+    .input-container {
+      color: #999999;
+
+      input {
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #FFFFFF;
+        padding: 10px 0;
+        outline: none;
+        color: white;
+        font-size: 24px;
+        line-height: 36px;
+
+        &::placeholder {
+          font-weight: 400;
+        }
+      }
+
+      .password-wrapper {
+        position: relative;
+
+        i {
+          position: absolute;
+          font-size: 20px;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .btn-login {
+      padding: 10px 0;
+      background: #4044ED;
+      color: white;
+      border: none;
+      outline: none;
+      margin-bottom: 10px;
+      transition: all 0.5s linear;
+      cursor: pointer;
+      border-radius: 0.8rem;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .register-container > a {
+      color: #999999;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tick-icon {
+      color: white;
+      background-color: #2ecc71;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 10px;
+    }
+
+    .success-message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #2ecc71;
+      padding: 50px 80px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      animation: slideIn 0.3s ease-in-out;
+      backdrop-filter: blur(10px);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .overlay_notification{
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba(22, 22, 26, 0.6);
+      position: fixed;
+      z-index: 100;
+      .notification__modal{
+        .notification_wrapper{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: $color-background-modal;
+          padding: 2rem;
+          border-radius: 0.8rem;
+          .noti{
+            font-size: 1.4rem;
+            color: $color-main-green;
+          }
+          .title{
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5;
+          }
+          .message{
+            font-size: 1.6rem;
+            line-height: 1.5;
+          }
+          .notification_footer{
+            display: flex;
+            justify-content: right;
+            .btn_ok{
+              background-color: $color-white;
+              color: $color-black;
+              padding: 0.8rem 2rem;
+              border-radius: 1rem;
+              border: 1px solid $color-grey;
+              margin-left: 1rem;
+              margin-top: 1rem;
+              cursor: pointer;
+              &:hover{
+                background-color: $color-main-blue;
+                border-color: $color-main-blue;
+                span{
+                  color: $color-white;
+                }
+              }
+            }
+            .btn_resent{
+              background-color: $color-main-blue;
+              color: $color-white;
+              padding: 0.8rem 2rem;
+              border-radius: 1rem;
+              border: 1px solid $color-grey;
+              margin-left: 1rem;
+              margin-top: 1rem;
+              cursor: pointer;
+              &:hover{
+                background-color: $color-main-blue;
+                border-color: $color-main-blue;
+                span{
+                  color: $color-white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .success-message.show-overlay + .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+
+    .error-message {
+      color: red;
+      font-size: 16px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  .img-decoration-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    img {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    .img-polygon1 {
+      width: 150px;
+      bottom: 30px;
+      right: 60px;
+    }
+
+    .img-polygon2 {
+      width: 150px;
+      bottom: 0;
+      right: 0;
+    }
+
+    .img-polygon3 {
+      width: 150px;
+      bottom: -55px;
+      right: -65px;
+    }
+
+    .img-ellipse-wrapper {
+      position: relative;
+      top: 50%;
+      transform: translateY(-40%);
+      width: 100%;
+      height: 100%;
+
+      .img-ellipse1 {
+        height: 600px;
+        left: 0;
+      }
+
+      .img-ellipse2 {
+        height: 50px;
+        left: 100px;
+        top: 65px;
+      }
+    }
+
+    .img-subtract {
+      top: 0;
+      right: 0;
+      width: 300px;
+    }
+  }
+}
+.forgot_password{
+  font-size: 1.6rem;
+  color: $color-main-blue;
+}

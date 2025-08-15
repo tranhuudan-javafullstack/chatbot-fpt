@@ -1,0 +1,82 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.verify_account_page{
+  min-height: 100vh;
+  background-color: $color-main-background;
+  @include flexMiddle();
+  .verify_account{
+    padding: 4rem;
+    border: 1px solid $color-grey;
+    background-color: $color-white;
+    border-radius: 1rem;
+    min-width: 60rem;
+    &--header{
+      margin-bottom: 2rem;
+      .title{
+        @include textStyle(2.2rem, 600, 1.2, $color-black);
+      }
+    }
+    &--body{
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      .input_token{
+        padding: 0.7rem 0.6rem;
+        border-radius: 0.9rem;
+        border: 1px solid $color-grey;
+        outline: none;
+        transition: 0.25s all linear;
+        //width: 100%;
+        flex: 1;
+        position: relative;
+        &:focus{
+          border: 1px solid $color-main-green;
+        }
+      }
+      .btn_resent{
+        background-color: $color-main-blue;
+        padding: 1rem 1.5rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        width: max-content;
+        .btn_title{
+          color: $color_white;
+          width: 100%;
+          font-weight: 500;
+        }
+      }
+    }
+    .notification{
+      margin: 0.5rem 0;
+      .message_error{
+        @include textStyle(1.4rem, 400, 1.2, red);
+      }
+      .message_resend{
+        @include textStyle(1.4rem, 400, 1.2, $color-main-green);
+      }
+    }
+    &--footer{
+      display: flex;
+      justify-content: end;
+      gap: 1rem;
+      margin-top: 2rem;
+      .footer_btn {
+        padding: 1rem 2rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        .btn_title{
+          @include textStyle(1.6rem, 500, 1.2, $color-black)
+        }
+        &--cancel{
+          border: 1px solid $color-grey;
+        }
+        &--verify{
+          background-color: $color-main-blue;
+          .btn_title{
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}

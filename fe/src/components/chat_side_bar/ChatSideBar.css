@@ -1,0 +1,85 @@
+.btn_side_bar {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  cursor: pointer;
+  top: 3rem;
+  left: 3.5rem;
+  z-index: 10;
+  transition: 0.25s linear all 0.05s;
+}
+.btn_side_bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn_side_bar--transform {
+  transform: translateX(-3rem);
+}
+
+.side_bar {
+  transition: width 0.25s linear;
+  overflow-x: hidden;
+  max-height: calc(100vh - 4rem);
+}
+
+.drawbar--padding {
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+  transition: 0.2s linear all;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.drawbar--padding .chat__wrapper {
+  margin: 2rem 0;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.drawbar--padding .new_chat {
+  display: flex;
+  gap: 0.5rem;
+}
+.drawbar--padding .new_chat__input {
+  width: 100%;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+  border-radius: 0.8rem;
+  padding: 0 0.5rem;
+}
+.drawbar--padding .new_chat__input:focus {
+  outline: 1px solid #5B96F7;
+}
+.drawbar--padding .new_chat .btn_create_chat {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: #5B96F7;
+  cursor: pointer;
+}
+.drawbar--padding .new_chat .btn_create_chat span {
+  color: #FFFFFF;
+  text-wrap: nowrap;
+}
+.drawbar--padding .btn_return_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B96F7;
+  width: max-content;
+  align-self: center;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.side_bar--hidden {
+  width: 0 !important;
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=ChatSideBar.css.map */

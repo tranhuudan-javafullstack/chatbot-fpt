@@ -1,0 +1,42 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.form-field{
+  display: flex;
+  flex-direction: column;
+  .label{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 1rem 0;
+    &:after {
+      content: '*';
+      color: red;
+      font-weight: 400;
+      margin-left: 4px;
+    }
+  }
+  .input__wrapper{
+    position: relative;
+    width: 100%;
+    .input-length{
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      @include textStyle(1.4rem, 400, 1.2 , $color-text-grey);
+    }
+  }
+  .input{
+    padding: 0.7rem 6rem 0.7rem 1.2rem;
+    border-radius: 0.9rem;
+    border: 1px solid $color-grey;
+    outline: none;
+    transition: 0.25s all linear;
+    width: 100%;
+    position: relative;
+    &:focus{
+      border: 1px solid $color-main-green;
+    }
+  }
+
+}

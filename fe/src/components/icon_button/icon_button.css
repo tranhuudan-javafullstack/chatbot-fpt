@@ -1,0 +1,18 @@
+.icon_button {
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 0.9;
+  padding: 0.7rem;
+  background-color: #F4F4F6;
+  border-radius: 0.7rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_button i {
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=icon_button.css.map */

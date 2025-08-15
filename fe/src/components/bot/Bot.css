@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.bot_page {
+  padding: 3rem 3.5rem;
+}
+.bot_page__header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bot_page__title {
+  display: flex;
+  align-items: center;
+}
+.bot_page__title .title {
+  font-size: 3rem;
+  margin: 0 0 0 1rem;
+  background: linear-gradient(90deg, #A359FF, #00CBFF); /* Chỉnh sửa màu theo ý thích */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bot_page__title img {
+  width: 5rem;
+  height: 5rem;
+}
+.bot_page__btn .btn_create_bot {
+  padding: 1.2rem 2rem;
+  background-color: rgba(57, 125, 230, 0.2);
+  border-radius: 1.2rem;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+.bot_page__btn .btn_create_bot--text {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #5B96F7;
+}
+.bot_page__btn .btn_create_bot:hover {
+  background-color: #5B96F7;
+}
+.bot_page__btn .btn_create_bot:hover .btn_create_bot--text {
+  color: #FFFFFF;
+}
+.bot_page__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=Bot.css.map */

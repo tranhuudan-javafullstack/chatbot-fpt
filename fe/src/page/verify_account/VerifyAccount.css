@@ -1,0 +1,95 @@
+.verify_account_page {
+  min-height: 100vh;
+  background-color: #F4F4F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verify_account_page .verify_account {
+  padding: 4rem;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  min-width: 60rem;
+}
+.verify_account_page .verify_account--header {
+  margin-bottom: 2rem;
+}
+.verify_account_page .verify_account--header .title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1C1C1C;
+}
+.verify_account_page .verify_account--body {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.verify_account_page .verify_account--body .input_token {
+  padding: 0.7rem 0.6rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+  outline: none;
+  transition: 0.25s all linear;
+  flex: 1;
+  position: relative;
+}
+.verify_account_page .verify_account--body .input_token:focus {
+  border: 1px solid #38c538;
+}
+.verify_account_page .verify_account--body .btn_resent {
+  background-color: #5B96F7;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: max-content;
+}
+.verify_account_page .verify_account--body .btn_resent .btn_title {
+  color: #FFFFFF;
+  width: 100%;
+  font-weight: 500;
+}
+.verify_account_page .verify_account .notification {
+  margin: 0.5rem 0;
+}
+.verify_account_page .verify_account .notification .message_error {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: red;
+}
+.verify_account_page .verify_account .notification .message_resend {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #38c538;
+}
+.verify_account_page .verify_account--footer {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.verify_account_page .verify_account--footer .footer_btn {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.verify_account_page .verify_account--footer .footer_btn .btn_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1C1C1C;
+}
+.verify_account_page .verify_account--footer .footer_btn--cancel {
+  border: 1px solid rgba(28, 28, 28, 0.1);
+}
+.verify_account_page .verify_account--footer .footer_btn--verify {
+  background-color: #5B96F7;
+}
+.verify_account_page .verify_account--footer .footer_btn--verify .btn_title {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=VerifyAccount.css.map */

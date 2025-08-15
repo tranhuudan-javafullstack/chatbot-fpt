@@ -1,0 +1,23 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.button {
+  background-color: $color-main-green;
+  color: $color-white;
+  padding: 1.2rem 2.5rem;
+  cursor: pointer;
+  text-align: center;
+  @include textStyle(18, 400, 1.2, $color-white);
+  gap: 1rem;
+  @include flexMiddle();
+  &--radius{
+    border-radius: 1.2rem;
+  }
+  &__icon{
+
+  }
+  &__title{
+    color: $color-white;
+    font-weight: 600;
+  }
+
+}

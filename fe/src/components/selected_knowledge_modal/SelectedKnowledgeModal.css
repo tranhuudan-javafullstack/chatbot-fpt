@@ -1,0 +1,145 @@
+.selected_knowledge__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: unset;
+  bottom: unset;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 80vh;
+  z-index: 9999;
+  background-color: #f5f7fa;
+  padding: 2.5rem 2.5rem;
+  border-radius: 1.2rem;
+  min-height: 144px;
+  max-height: calc(100vh - 140px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.selected_knowledge__modal .modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selected_knowledge__modal .modal__header .modal__title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1C1C1C;
+}
+.selected_knowledge__modal .modal__header .modal_btn_close {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.selected_knowledge__modal .modal__header .modal_btn_close:hover {
+  background-color: rgba(28, 28, 28, 0.1);
+}
+.selected_knowledge__modal .modal__body {
+  flex: 1;
+  overflow: hidden;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  overflow: auto;
+  height: 100%;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+  transition: 0.55s linear hover;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container:hover {
+  background-color: #E4E4E7;
+  border-bottom: unset;
+  border-radius: 0.8rem;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .image__container {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .image__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container .knowledge_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1C1C1C;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container .knowledge_description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(6, 7, 9, 0.5);
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container .tags__container {
+  display: flex;
+  gap: 0.5rem;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container .tags__container .tag {
+  padding: 0.2rem 0.5rem;
+  background-color: rgba(28, 28, 28, 0.1);
+  border-radius: 0.5rem;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container .tags__container .tag span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(6, 7, 9, 0.5);
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--left .content__container .create_time {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(6, 7, 9, 0.3);
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--right .btn_action {
+  background-color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--right .btn_action:hover {
+  background-color: #5B96F7;
+  border-color: #5B96F7;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--right .btn_action:hover span {
+  color: #FFFFFF;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--right .btn_action span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #5B96F7;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--right .btn_action--delete span {
+  color: red;
+}
+.selected_knowledge__modal .modal__body .knowledge__wrapper .knowledge__container--right .btn_action--delete:hover {
+  background-color: red;
+  border-color: red;
+}
+
+/*# sourceMappingURL=SelectedKnowledgeModal.css.map */

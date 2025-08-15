@@ -1,0 +1,44 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field .label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+.form-field .label:after {
+  content: "*";
+  color: red;
+  font-weight: 400;
+  margin-left: 4px;
+}
+.form-field .input__wrapper {
+  position: relative;
+  width: 100%;
+}
+.form-field .input__wrapper .input-length {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(6, 7, 9, 0.5);
+}
+.form-field .input {
+  padding: 0.7rem 6rem 0.7rem 1.2rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+  outline: none;
+  transition: 0.25s all linear;
+  width: 100%;
+  position: relative;
+}
+.form-field .input:focus {
+  border: 1px solid #38c538;
+}
+
+/*# sourceMappingURL=InputModal.css.map */

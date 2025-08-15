@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["BotWelcome.scss","../../styles/abstracts/_variables.scss","../../styles/abstracts/_mixins.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA,kBCRY;EDSZ;EACA;EACA;;AACA;EEMA,OFLqB;EEMrB,QFN4B;;AAC1B;EEIF,OFHuB;EEIvB,QFJ6B;;AAG7B;EACE;EACA;EACA;;AACA;EACE,OCRW;EDSX;EACA;;AAEF;EACE,OCnBY;EDoBZ;EACA","file":"BotWelcome.css"}

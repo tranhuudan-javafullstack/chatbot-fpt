@@ -1,0 +1,14 @@
+.table_wrapper {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table_wrapper th, .table_wrapper td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+}
+.table_wrapper .thead--border {
+  border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+}
+
+/*# sourceMappingURL=Knowledge.css.map */

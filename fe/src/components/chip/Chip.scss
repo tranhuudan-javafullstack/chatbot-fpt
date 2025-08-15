@@ -1,0 +1,11 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+.chip {
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: $color-grey02;
+  @include flexMiddle();
+  &__text{
+    @include textStyle(1.2rem, 500, 1, $color-black);
+  }
+}

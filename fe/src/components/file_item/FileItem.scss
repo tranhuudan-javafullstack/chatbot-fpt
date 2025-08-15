@@ -1,0 +1,43 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.file_item{
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5);
+  cursor: unset;
+  position: relative;
+  .file_img{
+    @include dimension(5rem, 5rem);
+    align-self: center;
+    img{
+      @include dimension(100%, 100%);
+      object-fit: cover;
+    }
+  }
+  .file_name{
+    text-overflow: ellipsis;
+    line-break: anywhere;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .delete_file{
+    @include positionAbsolute(0.4rem, 0.4rem, unset, unset);
+    .btn_close{
+      padding: 0.3rem;
+      @include dimension(2rem, 2rem);
+      border-radius: 50%;
+      @include flexMiddle();
+    }
+    &:hover{
+      .btn_close{
+        background-color: $color-grey02;
+      }
+    }
+  }
+}

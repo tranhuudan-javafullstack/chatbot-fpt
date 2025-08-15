@@ -1,0 +1,16 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy toàn bộ mã nguồn React vào container
+COPY fe/ .
+
+# Cài đặt dependencies
+RUN npm install
+
+# Set port cho React app
+ENV PORT=3001
+EXPOSE 3001
+
+# Lệnh khởi chạy
+CMD ["npm", "start"]

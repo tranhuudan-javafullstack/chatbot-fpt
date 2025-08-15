@@ -1,0 +1,78 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.chat_message__wrapper{
+  display: flex;
+  align-items: center;
+  .avatar_bot{
+    @include dimension(5rem, 5rem);
+    margin-left: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  .chat_message__item{
+    position: relative;
+    //width: 50%;
+    max-width: 50%;
+    display: flex;
+    .action_message{
+      position: absolute;
+      //z-index: 10;
+      bottom: -1.5rem;
+      left: 1rem;
+      //transform: translateY(50%);
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .message_sub_info{
+        .info_response{
+          @include textStyle(1.2rem, 400, 1.2, $color-text-grey);
+          i{
+            color: $color-main-green;
+          }
+        }
+      }
+      .action_btn__wrapper{
+        display: flex;
+        //gap: 0.5rem;
+        .action_btn{
+          cursor: pointer;
+          padding: 0rem 0.5rem;
+          border-radius: 0.5rem;
+          transition: 0.25s all linear;
+          i, svg{
+            @include textStyle(1.2rem, 400, 1.2, $color-text-grey);
+          }
+          &--copy{
+            svg{
+              @include dimension(1.2rem, 1.2rem);
+            }
+          }
+          &:hover{
+            background-color: $color-grey;
+          }
+        }
+      }
+
+    }
+  }
+  .chat_message{
+    padding: 1.2rem;
+    border-radius: 2.5rem;
+    background-color: $color-main-blue;
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+    width: max-content;
+    align-self: end;
+    .message{
+      @include textStyle(1.6rem, 400, 1.2, $color-white);
+    }
+  }
+  &--self {
+    justify-content: end;
+  }
+}

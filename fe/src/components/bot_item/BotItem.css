@@ -1,0 +1,87 @@
+.bot_container {
+  padding: 1.6rem;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+  border-radius: 2rem;
+  width: calc(33.33% - 1.6666666667rem);
+  display: flex;
+  min-height: 18rem;
+  max-height: 18rem;
+  background-color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+.bot_container__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.bot_container__left .bot_title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #1C1C1C;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.bot_container__left .bot_decription__container {
+  flex: 1;
+}
+.bot_container__left .bot_description {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(6, 7, 9, 0.5);
+}
+.bot_container__left .bot_createat {
+  color: #1C1C1C;
+}
+.bot_container__right {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 0.8rem;
+  background-color: rgba(56, 197, 56, 0.3);
+  border-radius: 0.8rem;
+  margin-left: 0.5rem;
+}
+.bot_container__right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bot_container .tools {
+  position: absolute;
+  top: unset;
+  left: unset;
+  right: 1.6rem;
+  bottom: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  transition: 0.25s all linear;
+  opacity: 0;
+  z-index: 100;
+}
+.bot_container:hover {
+  box-shadow: 0 6px 8px 0 rgba(28, 31, 35, 0.06);
+}
+.bot_container:hover .tools {
+  transform: translateY(-0.8rem);
+  opacity: 1;
+}
+.bot_container .model_name__container .model_info {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(6, 7, 9, 0.3);
+}
+
+/*# sourceMappingURL=BotItem.css.map */

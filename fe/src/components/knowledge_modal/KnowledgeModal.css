@@ -1,0 +1,37 @@
+.input_file {
+  display: none;
+}
+
+.upload {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(28, 28, 28, 0.1);
+  text-align: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+.upload i {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #38c538;
+}
+.upload .input-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1C1C1C;
+}
+
+.files_container {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=KnowledgeModal.css.map */

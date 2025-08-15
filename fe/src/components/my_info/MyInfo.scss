@@ -1,0 +1,101 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+.my_account{
+  margin: 2rem;
+}
+.bot_page__header{
+  height: unset;
+}
+.my_info--body{
+  justify-content: center;
+  flex-direction: column;
+}
+.bot_page__body{
+  .body__header{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey;
+    width: 100%;
+    @include flexMiddle();
+  }
+  .body__content{
+    display: flex;
+    gap: 5rem;
+    .form_input{
+      width: 50%;
+      .title_form{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-black;
+      }
+      .error{
+        font-size: 1.6rem;
+        color: red;
+        margin: 1.5rem 0;
+      }
+    }
+  }
+
+  .avatar{
+    @include dimension(10rem, 10rem);
+    border-radius: 50%;
+    border: 1px solid $color-grey;
+    position: relative;
+    @include flexMiddle();
+    img{
+      @include dimension(100%, 100%);
+    }
+    .btn_edit_avatar{
+      padding: 0.3rem;
+      border-radius: 50%;
+      background-color: $color-main-blue;
+      @include dimension(3rem, 3rem);
+      @include flexMiddle();
+      @include positionAbsolute(unset, -0.5rem, -0.5rem, unset);
+      cursor: pointer;
+      opacity: 0;
+      transition: 0.2s ease-in-out all;
+      cursor: pointer;
+      i{
+        color: $color-white;
+      }
+    }
+    &:hover{
+      .btn_edit_avatar{
+        transform: translate(-0.5rem, -0.5rem);
+        opacity: 1;
+      }
+    }
+  }
+  .form_input{
+    max-width: 60rem;
+    .form_footer{
+      margin: 1rem 0;
+      label{
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 1rem 0;
+        margin-right: 0.5rem;
+      }
+      #date{
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid $color-grey;
+        padding: 0.5rem;
+        &:focus{
+          outline: 1px solid $color-main-green;
+        }
+      }
+      #gender{
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid $color-grey;
+        padding: 0.5rem;
+        &:focus{
+          outline: 1px solid $color-main-green;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.tr_knowledge{
+  cursor: pointer;
+  transition: all 0.25s linear;
+  overflow: hidden;
+  .knowledge_link{
+    text-decoration: none;
+  }
+  &:hover{
+    td{
+      background-color: $color-grey02;
+    }
+    .td_info{
+      border-top-left-radius: 0.8rem;
+      border-bottom-left-radius: 0.8rem;
+    }
+    >td:last-child{
+      border-top-right-radius: 0.8rem;
+      border-bottom-right-radius: 0.8rem;
+    }
+  }
+}
+.td_info{
+  display: flex;
+  gap: 2rem;
+  .knowledge_img{
+    @include dimension(4.8rem, 4.8rem);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    img{
+      @include dimension(100%,100%);
+      object-fit: cover;
+    }
+  }
+  .knowledge__content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    .knowledge_title{
+      @include textStyle(1.6rem, 600, 1.2, $color-black);
+    }
+    .knowledge_description{
+      @include textStyle(1.4rem, 400, 1.2, $color-text-grey);
+    }
+  }
+}
+.td_action{
+  display: flex;
+  gap: 0.5rem;
+}

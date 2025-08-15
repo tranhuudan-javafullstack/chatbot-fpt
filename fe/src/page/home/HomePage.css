@@ -1,0 +1,11 @@
+.chat {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F4F4F6;
+}
+.chat .safe_area {
+  width: 80%;
+  max-height: 100vh;
+}
+
+/*# sourceMappingURL=HomePage.css.map */

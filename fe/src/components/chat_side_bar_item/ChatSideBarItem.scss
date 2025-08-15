@@ -1,0 +1,85 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+.chat_bar__item{
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  transition: all 0.25s linear;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:hover {
+    background-color: $color-grey;
+  }
+  .item_title{
+    @include textStyle(1.8rem, 400, 1.2, $color-black);
+  }
+  &--selected {
+    background-color: $color-item-bg-selected;
+  }
+  .options_dropdown{
+    position: relative;
+    .btn_option{
+      transition: 0.25s all linear;
+      i{
+        @include textStyle(2rem, 600, 1.2, $color-text-grey);
+      }
+      &:hover {
+        i{
+          color: $color-black;
+        }
+      }
+    }
+    .dropdown-content{
+      position: fixed;
+      background-color: $color-white;
+      border: 1px solid $color-grey;
+      padding: 1rem;
+      border-radius: 1rem;
+      z-index: 10;
+      display: none;
+      &--show{
+        display: block;
+      }
+    }
+    .dropdown-btn{
+      @include flexMiddle();
+      justify-content: start;
+      gap: 1rem;
+      padding: 0.8rem;
+      border-radius: 0.8rem;
+      transition: 0.25s linear all;
+      @include textStyle(1.6rem, 500, 1.2, $color-black);
+      i{
+        font-size:1.8rem;
+      }
+      &:hover{
+        background-color: $color-grey;
+      }
+    }
+    .btn-delete{
+      color: red;
+    }
+  }
+  .rename__container{
+    @include positionAbsolute(1rem, 0, unset, 1rem);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    padding-right: 4rem;
+    display: none;
+    .input_rename{
+      width: 100%;
+      border-radius: 0.5rem;
+      border: none;
+      padding: 0 0.5rem;
+      &:focus{
+        outline: none;
+        border: 1px solid $color-main-blue;
+      }
+    }
+    &--show{
+      display: block;
+    }
+  }
+}

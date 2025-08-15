@@ -1,0 +1,66 @@
+.loading-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+.loading-area .loader .loader_item {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: animate 1.5s ease-in-out infinite;
+  display: inline-block;
+  margin: 0.5rem;
+}
+.loading-area .loader .loader_item:nth-child(0) {
+  animation-delay: 0s;
+}
+.loading-area .loader .loader_item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.loading-area .loader .loader_item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.loading-area .loader .loader_item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.loading-area .loader .loader_item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.loading-area .loader .loader_item:nth-child(5) {
+  animation-delay: 1s;
+}
+.loading-area .loader .loader_item:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.loading-area .loader .loader_item:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.loading-area .loading_label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #5B96F7;
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: scale(0.2);
+    background-color: #5B96F7;
+  }
+  40% {
+    transform: scale(1);
+    background-color: #38c538;
+  }
+  50% {
+    transform: scale(1);
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=Loading.css.map */

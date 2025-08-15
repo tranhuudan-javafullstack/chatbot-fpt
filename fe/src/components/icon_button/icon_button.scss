@@ -1,0 +1,15 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.icon_button{
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 0.9;
+  padding: 0.7rem;
+  background-color: $color-main-background;
+  border-radius: 0.7rem;
+  @include dimension(35px, 35px);
+  @include flexMiddle();
+  i{
+    font-size: 1.8rem;
+  }
+}

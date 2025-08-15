@@ -1,0 +1,37 @@
+.bot_welcome {
+  width: calc(100% - 2rem);
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 4rem);
+  margin: 2rem 0;
+  border-radius: 0.8rem;
+  background-color: #FFFFFF;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.bot_welcome .image_bot {
+  width: 34rem;
+  height: 40rem;
+}
+.bot_welcome .image_bot img {
+  width: 100%;
+  height: 100%;
+}
+.bot_welcome .content__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bot_welcome .content__wrapper .title_large {
+  color: #5B96F7;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.bot_welcome .content__wrapper .sub_info {
+  color: rgba(6, 7, 9, 0.5);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=BotWelcome.css.map */

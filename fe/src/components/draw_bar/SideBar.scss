@@ -1,0 +1,46 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+.drawbar{
+  width: 20%;
+  //border-right: 1px solid $color-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem;
+  border-radius: 1.6rem;
+  background-color: $color-on-background;
+  &__header{
+    padding: 2rem;
+  }
+  &__bottom {
+    padding-top: 1rem;
+    margin: 1rem 2rem;
+    border-top: 1px solid $color-grey;
+  }
+  .new_bot__modal{
+    @include positionAbsolute(50%, unset,unset,50%);
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width: 60rem;
+    z-index: 100;
+    background-color: $color-background-modal;
+    padding: 2.5rem 2.5rem;
+    border-radius: 1.2rem;
+    min-height: 144px;
+    max-height: calc(100vh - 140px);
+    overflow: hidden;
+    .title_form{
+      @include textStyle(2.5rem, 600, 1.2, $color-black);
+      margin-bottom: 3rem;
+    }
+    &-body {
+      overflow-y: scroll;
+    }
+    &-footer{
+      display: flex;
+      justify-content: end;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+  }
+}

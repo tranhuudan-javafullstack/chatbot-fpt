@@ -1,0 +1,76 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.bot_container{
+    padding: 1.6rem;
+    border: 1px solid $color-grey;
+    border-radius: 2rem;
+    width: calc(33.33% - 5rem/3);
+    display: flex;
+    min-height: 18rem;
+    max-height: 18rem;
+    background-color: $color-white;
+    position: relative;
+    cursor: pointer;
+    &__left{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .bot_title{
+        @include textStyle(1.6rem, 600, 1.1, $color-black);
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .bot_decription__container{
+        flex: 1;
+      }
+      .bot_description{
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        word-wrap: break-word;
+        @include textStyle(1.4rem, 400, 1.6, $color-text-grey)
+      }
+      .bot_createat{
+        color: $color-black;
+      }
+    }
+    &__right{
+      @include dimension(7.5rem, 7.5rem);
+      padding: 0.8rem;
+      background-color: $color-second-green;
+      border-radius: 0.8rem;
+      margin-left: 0.5rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .tools{
+      @include positionAbsolute(unset, 1.6rem,0.8rem, unset);
+      display: flex;
+      gap: 1rem;
+      transition: 0.25s all linear;
+      opacity: 0;
+      z-index: 100;
+    }
+    &:hover {
+      .tools{
+        transform: translateY(-0.8rem);
+        opacity: 1;
+      }
+      box-shadow: 0 6px 8px 0 rgba(28, 31, 35, .06);
+    }
+    .model_name__container{
+      .model_info{
+        @include textStyle(1.4rem, 400, 1.2, $color-text-second-grey);
+      }
+    }
+}

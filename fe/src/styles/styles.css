@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 48%;
+  }
+}
+.link {
+  text-decoration: none;
+}
+
+.mb_10 {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,28 @@
+@mixin positionMiddle() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin positionAbsolute($top: unset, $right: unset, $bottom: unset,  $left: unset) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+@mixin flexMiddle() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin dimension($width, $height){
+  width: $width;
+  height: $height;
+}
+@mixin textStyle($size, $weight: 400, $height, $color){
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}

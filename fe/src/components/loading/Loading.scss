@@ -1,0 +1,63 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+.loading-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  .loader {
+    .loader_item {
+      @include dimension(3rem, 3rem);
+      border-radius: 50%;
+      transform: scale(0);
+      animation: animate 1.5s ease-in-out infinite;
+      display: inline-block;
+      margin: 0.5rem;
+      &:nth-child(0){
+        animation-delay: 0s;
+      }
+      &:nth-child(1){
+        animation-delay: 0.2s;
+      }
+      &:nth-child(2){
+        animation-delay: 0.4s;
+      }
+      &:nth-child(3){
+        animation-delay: 0.6s;
+      }
+      &:nth-child(4){
+        animation-delay: 0.8s;
+      }
+      &:nth-child(5){
+        animation-delay: 1s;
+      }
+      &:nth-child(6){
+        animation-delay: 1.2s;
+      }
+      &:nth-child(7){
+        animation-delay: 1.4s;
+      }
+    }
+  }
+  .loading_label{
+    @include textStyle(2.5rem, 500, 1.2, $color-main-blue);
+  }
+}
+@keyframes animate {
+  0%, 100% {
+    transform: scale(0.2);
+    background-color: $color-main-blue;
+  }
+  40%{
+    transform: scale(1);
+    background-color: $color-main-green;
+  }
+  50%{
+    transform: scale(1);
+    background-color: red;
+  }
+}

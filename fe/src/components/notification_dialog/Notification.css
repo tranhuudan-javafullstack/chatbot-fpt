@@ -1,0 +1,43 @@
+.dialog {
+  padding: 2.4rem;
+  width: 30%;
+  max-width: 60rem;
+  z-index: 100;
+  background-color: #f5f7fa;
+  border-radius: 1.2rem;
+  min-height: 144px;
+  max-height: calc(100vh - 140px);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: unset;
+  bottom: unset;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dialog_title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1C1C1C;
+}
+.dialog_body {
+  flex: 1;
+}
+.dialog_body .dialog_message {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(6, 7, 9, 0.5);
+}
+.dialog_footer {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=Notification.css.map */
